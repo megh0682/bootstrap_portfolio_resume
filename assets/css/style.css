@@ -1,0 +1,251 @@
+body{
+ font-family:Lobster;
+ background-color:white;
+}
+.nav-pills{
+  margin-bottom:;
+  font-family:Lobster;
+  font-size: 2.5em;
+	background-color:black;
+  
+}
+.block {
+  color:#dddddd; 
+  background-color:#000;
+  padding:10px;
+  width:75%;
+  height:75%;
+  margin-top:2%;
+  margin-right:auto;
+  margin-left:auto;
+  border-radius:5px;
+  opacity:1;
+  overflow:hidden;
+  
+}
+.cover-page{
+ background:url("https://images.unsplash.com/photo-1460602594182-8568137446ce?dpr=1&auto=format&fit=crop&w=1500&h=994&q=80&cs=tinysrgb&crop=");
+ background-size:cover;
+ height:800px;
+ margin-top:0px;
+ font-family:Lobster;
+}
+.btnList .btn-default{
+  padding:5px;
+  margin:5px;
+  margin-top:20px;
+  background-color:black ;
+  color:#337ab7;
+  font-size:1.5em;
+  border:1px solid;
+ }
+
+.cover-page .img-thumbnail{
+  padding:0px;
+  border:none;
+  margin: 2%;
+}
+/** about me page css**/
+.aboutme{
+background:url("https://images.unsplash.com/photo-1460602594182-8568137446ce?dpr=1&auto=format&fit=crop&w=1500&h=994&q=80&cs=tinysrgb&crop=");
+ background-size:cover;
+ height:800px;
+ margin-top:0px;
+ padding-top:5%;
+ font-family:Lobster;
+
+}
+.me{
+  margin-top:2%;
+  background-color:;
+  font-size:1.5em;
+  text-align:left;
+  word-spacing:5px;
+  padding:20px;
+  color:#337ab7;
+}
+h1{
+  margin-top:0px;
+  padding:0px;
+  font-size:5.0em;
+}
+
+/**Portfolio page*/
+
+.portfolio{
+background:url("https://images.unsplash.com/photo-1460602594182-8568137446ce?dpr=1&auto=format&fit=crop&w=1500&h=994&q=80&cs=tinysrgb&crop=");
+ background-size:cover;
+ height:1200px;
+ margin-top:0px;
+ padding-top:5%;
+ font-family:Lobster;
+}
+
+#myportfolio{
+ overflow: scroll;
+}
+
+.thumbnail{
+background: black;
+padding:auto;
+margin:5%;
+overflow-y: hidden;
+min-height: 200px;
+}
+.thumbnail .caption{
+color:#337ab7;
+font-size:1.5em;
+}
+
+/**resume page*****************/
+
+.resume{
+background:url("https://images.unsplash.com/photo-1460602594182-8568137446ce?dpr=1&auto=format&fit=crop&w=1500&h=994&q=80&cs=tinysrgb&crop=");
+ background-size:cover;
+ height:1200px;
+ margin-top:0px;
+ padding-top:1%;
+ font-family:Lobster;
+}
+.resume_sec{
+  text-align:left;
+  color:#337ab7;
+  margin:10px;
+  margin-left: 50px;
+  padding:10px;
+  font-size:1.2em;
+
+}
+.resume_sec h2{
+  color:#fff;
+}
+.progress{
+width: 50%;
+
+}
+a{
+ color:orange;
+}
+
+/***************Contact me form*********************************/
+.contactus{
+background:url("https://images.unsplash.com/photo-1460602594182-8568137446ce?dpr=1&auto=format&fit=crop&w=1500&h=994&q=80&cs=tinysrgb&crop=");
+ background-size:cover;
+ height:1200px;
+ margin-top:0px;
+ padding-top:1%;
+ font-family:Lobster;
+}
+.well{
+  background-color: #000;
+  font-family:Lobster;
+  font-size:1.5em;
+  border:none;
+}
+.well legend{
+  color:#fff;
+  font-size: 2.5em;
+  border:none;
+  margin-bottom: 5%;
+}
+.form-group{
+  margin-top:20px;
+  color:#337ab7;
+  font-size:1em;
+}
+.form-group button{
+ background-color:#337ab7;
+ padding:10px;
+ width:50%;
+ border: none;
+  color:#fff;
+  font-size:1.5em;
+}
+
+.footer, .push {
+    height: 100px; /* .push must be the same height as .footer */
+    text-align:center;
+    font-size:1em;
+    color:#fff;
+    padding:10px;
+    background-color:#000;
+}
+
+/********************************************MEDIA QUERIES*******************************************************/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* STYLES GO HERE */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* STYLES GO HERE */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* STYLES GO HERE */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* STYLES GO HERE */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* STYLES GO HERE */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* STYLES GO HERE */
+}
+
+/* iPhone 5 (portrait & landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+/* STYLES GO HERE */
+}
+
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}
