@@ -6,9 +6,10 @@
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <meta name="description" content="Responsive HTML5 Resume/CV Template">
     <meta name="author" content="Megha Iyer">    
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -16,158 +17,187 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Theme CSS-->   
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-<div class = "cover-page text-center">
-   <ul class = "nav nav-pills">
-     <li class="pull-right">
-       <a href="#contactus_id">Contact</a>
-     </li>
-     <li class="pull-right">
-       <a href="#resume_id">Resume</a>
-     </li>
-     <li class="pull-right">
-       <a href="#Portfolio_id">Portfolio</a>
-     </li>
-     <li class="pull-right">
-       <a href="#aboutme_id">About Me</a>
-     </li>  
-     <li>
-       <a href="#">Megha Iyer</a>
-     </li>  
-   </ul>  
-  
-  
-  <div class = "block text-center">
+
+<!-- Header Nav section-->
+
+
+  <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="0">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navlist">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <h1 class="navbrand">Megha Iyer</h1>
+    </div>
+    <div id="navlist" class = "collapse navbar-collapse pull-right list-inline">
+      <ul class = "nav nav-pills">
+       <li class="active">
+         <a href="#aboutme_id" >About Me</a>
+       </li>  
+       <li>
+         <a href="#Portfolio_id">Portfolio</a>
+       </li>
+       <li>
+         <a href="#resume_id">Resume</a>
+       </li>
+       <li>
+         <a href="#contactus_id">Contact</a>
+       </li>
+      </ul> 
+    </div> 
+ </nav>
+
+ <!--body begins-->
+
+<div id ="maincontainer" class="container-fluid scrollable"  data-spy="scroll" data-target="#navlist">
+<!-- cover page
+  <div class = "cover-page text-center">
+  <div class = "block">
     <h1>Megha Iyer</h1>
     <h5> Seasoned Software Test Engineer, aspiring to become a full stack developer</h5>
     <img src="https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/404093_4116436782835_218351561_n.jpg?oh=9d2752a1119da181f9c5e3618c9b71d0&oe=591AE022" class="img-thumbnail img-circle" width="500" height="400">
-  
-    <div class="btnList">
-      <a class="btn btn-default" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin</a>
-      <a href="#" class="btn btn-default"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
-      <a class="btn btn-default" href="#"><i class="fa fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a>
-    </div>
-    </div>
-</div>
+    <div class="clearfix"></div>
+    <p class="me"> 
+        I am Megha Iyer a loving wife, a good mother and a seasoned software test engineer with 8 years of experience testing UI and API of web, saas and  mobile applications. Experience building TDD and BDD test frameworks using junit, testng, cucumber JVM and QTP with insights into design patterns like page object model,keyword driven model, data driven model and hybrid model.Proficient coding in core Java and building J2EE MVC web applications.Experience using python, perl, javascript and vbscript in creating help utilities and adhoc test script. Proficient valdiating data on various relational DB sources using SQL/PLSQL queries.Proficient with unix/linux bash commands to monitor processes and analyze web/app server logs to debug an issue.
+        Adaptive, agile and progressive augments my analytical,creative and perfectionist personality.Currently, I am attending to JS web development bootcamp to build up on full stack web development skill using Javascript. 
+    </p>
+
+    
+  </div>
+  </div>
+-->
   
 <!--Page 2 starts here-->
-<div class="aboutme text-center" id="aboutme_id">
-<div class="row">
-  <div class="block text-center">
-  <h1>About Me</h1>  
-  <div class="col-md-12 text-center">
-   <p class="me"> 
-    I am Megha Iyer a loving wife, a good mother and a seasoned software test engineer with 8 years of experience testing UI and API of web, saas and  mobile applications. Experience building TDD and BDD test frameworks using junit, testng, cucumber JVM and QTP with insights into design patterns like page object model,keyword driven model, data driven model and hybrid model.Proficient coding in core Java and building J2EE MVC web applications.Experience using python, perl, javascript and vbscript in creating help utilities and adhoc test script. Proficient valdiating data on various relational DB sources using SQL/PLSQL queries.Proficient with unix/linux bash commands to monitor processes and analyze web/app server logs to debug an issue.
-Adaptive, agile and progressive augments my analytical,creative and perfectionist personality.Currently, I am attending to JS web development bootcamp to build up on full stack web development skill using Javascript. 
-   <hr>
+  <div class="aboutme" id="aboutme_id">
+  <h1 class="text-center">About Me</h1> 
+    <div class="block text-center">
+
+     <div class="row">
+     <h2 class="text-center"> Seasoned Software Test Engineer, aspiring to become a full stack developer</h2>
+     </div>
+
+    <div class="row">
+      <div class="col-md-3 pull-left">
+        <img src="https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/15781569_10209548073192278_5108910873222817066_n.jpg?oh=f7fd068ebbcf63166cd489e6943515c5&oe=594BE27F" class="img-thumbnail img-circle" width="250" height="300">
+      </div>
+      <div class="col-md-9">
+      <p class="me"> 
+        I am Megha Iyer a loving wife, a good mother and a seasoned software test engineer with 8 years of experience testing UI and API of web, saas and  mobile applications. Experience building TDD and BDD test frameworks using junit, testng, cucumber JVM and QTP with insights into design patterns like page object model,keyword driven model, data driven model and hybrid model.Proficient coding in core Java and building J2EE MVC web applications.Experience using python, perl, javascript and vbscript in creating help utilities and adhoc test script. Proficient valdiating data on various relational DB sources using SQL/PLSQL queries.Proficient with unix/linux bash commands to monitor processes and analyze web/app server logs to debug an issue.
+        Adaptive, agile and progressive augments my analytical,creative and perfectionist personality.Currently, I am attending to JS web development bootcamp to build up on full stack web development skill using Javascript. 
+      </p>
+       <hr>
+      </div>
+    </div>
+    </div>
   </div>
-  </div>
-</div>
-</div>
+
 <!-- Portfolio Page-->
+
 <div class="Portfolio" id="Portfolio_id">
+<h1 class="text-center">Portfolio</h1> 
 <div class="block text-center" id="myportfolio">
   <div class="row">
-  <h1>Portfolio</h1> 
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="https://github.com/megh0682/mystorywriter">
-        <img src="assets/images/Storyboard.png" alt="Storyboard" style="min-height:200px">
-        <div class="caption">
-          <p>A Java/J2EE web application for kids to write, view and download short stories.</p>
+     <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://github.com/megh0682/mystorywriter">
+            <img src="assets/images/Storyboard.png" alt="Storyboard" style="min-height:200px">
+            <div class="caption">
+              <p>A Java/J2EE web application for kids to write, view and download short stories.</p>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="https://github.com/megh0682/UnfoldingMaps">
-        <img src="assets/images/choropleth.jpg" alt="Data Visualization" style="max-height:175px">
-        <div class="caption">
-          <p>A Java applet to visualize the choropleth map of countries with highest dense airport routes around the world.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://github.com/megh0682/UnfoldingMaps">
+            <img src="assets/images/choropleth.jpg" alt="Data Visualization" style="max-height:175px">
+            <div class="caption">
+              <p>A Java applet to visualize the choropleth map of countries with highest dense airport routes around the world.</p>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="https://github.com/megh0682/mystorywriterQA">
-        <img src="assets/images/POM.png" alt="test framework prototype" style="min-height:200px">
-        <div class="caption">
-          <p>A behavior driven cucumber framework skeletal prototype.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://github.com/megh0682/mystorywriterQA">
+            <img src="assets/images/POM.png" alt="test framework prototype" style="min-height:200px">
+            <div class="caption">
+              <p>A behavior driven cucumber framework skeletal prototype.</p>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
+      </div>
   </div>
-  </div>
-  
+  <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://github.com/megh0682/mystorywriter">
+            <img src="assets/images/Storyboard.png" alt="Storyboard" style="min-height:200px">
+            <div class="caption">
+              <p>A Java/J2EE web application for kids to write, view and download short stories.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://github.com/megh0682/UnfoldingMaps">
+            <img src="assets/images/choropleth.jpg" alt="Data Visualization" style="max-height:175px">
+            <div class="caption">
+              <p>A Java applet to visualize the choropleth map of countries with highest dense airport routes around the world.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://github.com/megh0682/mystorywriterQA">
+            <img src="assets/images/POM.png" alt="test framework prototype" style="min-height:200px">
+            <div class="caption">
+              <p>A behavior driven cucumber framework skeletal prototype.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
 
   <div class="row">
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="https://github.com/megh0682/mystorywriter">
-        <img src="assets/images/Storyboard.png" alt="Storyboard" style="min-height:200px">
-        <div class="caption">
-          <p>A Java/J2EE web application for kids to write, view and download short stories.</p>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://github.com/megh0682/mystorywriter">
+            <img src="assets/images/Storyboard.png" alt="Storyboard" style="min-height:200px">
+            <div class="caption">
+              <p>A Java/J2EE web application for kids to write, view and download short stories.</p>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="https://github.com/megh0682/UnfoldingMaps">
-        <img src="assets/images/choropleth.jpg" alt="Data Visualization" style="max-height:175px">
-        <div class="caption">
-          <p>A Java applet to visualize the choropleth map of countries with highest dense airport routes around the world.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://github.com/megh0682/UnfoldingMaps">
+            <img src="assets/images/choropleth.jpg" alt="Data Visualization" style="max-height:175px">
+            <div class="caption">
+              <p>A Java applet to visualize the choropleth map of countries with highest dense airport routes around the world.</p>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="https://github.com/megh0682/mystorywriterQA">
-        <img src="assets/images/POM.png" alt="test framework prototype" style="min-height:200px">
-        <div class="caption">
-          <p>A behavior driven cucumber framework skeletal prototype.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://github.com/megh0682/mystorywriterQA">
+            <img src="assets/images/POM.png" alt="test framework prototype" style="min-height:200px">
+            <div class="caption">
+              <p>A behavior driven cucumber framework skeletal prototype.</p>
+            </div>
+          </a>
         </div>
-      </a>
-    </div>
-  </div>
-  </div>
-
-  <div class="row">
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="https://github.com/megh0682/mystorywriter">
-        <img src="assets/images/Storyboard.png" alt="Storyboard" style="min-height:200px">
-        <div class="caption">
-          <p>A Java/J2EE web application for kids to write, view and download short stories.</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="https://github.com/megh0682/UnfoldingMaps">
-        <img src="assets/images/choropleth.jpg" alt="Data Visualization" style="max-height:175px">
-        <div class="caption">
-          <p>A Java applet to visualize the choropleth map of countries with highest dense airport routes around the world.</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="https://github.com/megh0682/mystorywriterQA">
-        <img src="assets/images/POM.png" alt="test framework prototype" style="min-height:200px">
-        <div class="caption">
-          <p>A behavior driven cucumber framework skeletal prototype.</p>
-        </div>
-      </a>
-    </div>
-  </div>
+      </div>
   </div>
 </div>  
 </div> 
@@ -175,30 +205,34 @@ Adaptive, agile and progressive augments my analytical,creative and perfectionis
 <!--resume page-->
 
 <div class="resume" id="resume_id">
+<h1 class="text-center">Resume</h1>
   <div class = "block text-center">
-    <div class = "row">
-      <h1>Resume</h1>
-      <div class="col-md-3   resume_sec">
+    <div class = "row resume_sec">
+      <div class="col-md-12">
         <h2>Objective</h2>
         <p>Be a knowledge seeker, keep prototyping new frameworks and gain experience designing, building, testing and maintaining adaptive, scalable and optimized web, saas and cloud applications!</p>
       </div>
-      <div class="col-md-3  resume_sec">
+    </div>
+    <div class="row  resume_sec">
+      <div class="col-md-12">
         <h2>Education</h2>
         <p>
          Bachelors of engineering in Electronics and Communication
         </p>
       </div>
-      <div class="col-md-4 resume_sec">
+    </div>
+    <div class="row resume_sec">
+      <div class="col-md-12">
         <h2>Certificates</h2>
-        <ul>
+        <ul class="list-inline">
           <li>CSTE</li>
           <li>CSQA</li>
           <li>Java Object Oriented Programming Certificate on Coursera</li>
           </ul>
       </div>
     </div>
-    <div class = "row">
-      <div class="col-md-12 resume_sec" style="text-align: center;">
+    <div class = "row resume_sec">
+    <div class="col-md-12">
       <h2> Skills</h2>
       <span class="col-sm-3">Core Java</span>
       <div class="progress"> 
@@ -250,30 +284,25 @@ Adaptive, agile and progressive augments my analytical,creative and perfectionis
       </div>
 
   </div>
-  <div class="row">
-   <div class="col-md-12 resume_sec" style="text-align: center;">
+  </div>
+  <div class="row resume_sec">
+   <div class="col-md-12">
    <h2>Experience</h2>
-   <a href = "#">Download my word resume here!</a>
+   <a href = "https://docs.google.com/document/d/1_eADzbVHNNy-gRO2Rq4RLhsitvKeT5kEOXl1YAsk0lM/edit?usp=sharing" target="_blank">View my resume here.</a>
    </div>
   </div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
 
 <!--Contact us page-->
 
 <div class="contactus" id="contactus_id">
-  <div class="block text-center">
-
+<h1 class="text-center">Leave me a note!</h1>
+  <div class="block">
     <form class="well form-horizontal" action=" " method="post"  id="contact_form">
 
-    
-
-    <!-- Form Name -->
-    <legend>Leave me a note!</legend>
-
-    <!-- Text input-->
+     <!-- Text input-->
 
     <div class="form-group">
       <label class="col-md-4 control-label">First Name</label>  
@@ -345,15 +374,21 @@ Adaptive, agile and progressive augments my analytical,creative and perfectionis
 </div>
 </div>
 
-<div class="footer">
-  <p>Copyright-Megha_Iyer-2017</p>
-</div>
+<!-- End of contact us page-->
 
-<script>
-$(document).ready(function(){
-    $('body').scrollspy({target: ".nav-pills", offset: 50});   
-});
-</script>
-  
+<nav class="navbar navbar-default navbar-fixed-bottom text-center ">
+    <div class="btn-group" id="footerlist">
+      <a class="btn btn-default" href="https://www.linkedin.com/in/meghaiyer" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin</a>
+      <a class="btn btn-default" href="https://github.com/megh0682/" target="_blank" ><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+      <a class="btn btn-default" href="http://stackoverflow.com/users/5931873/bodhi" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a>
+    </div>
+    
+</nav>
+
+
+
+<!-- End of footer-->
+
+</div>
 </body>
 </html>
